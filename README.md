@@ -20,22 +20,22 @@ Built with discord.py (slash commands + views), SQLAlchemy, and Supabase (Postgr
 ```bash
 discord-pm-bot/
 │── app/
-│   │── bot.py                  # startup & wiring
-│   │── discord_handlers.py     # slash cmds, views, modals
-│   │── embeds.py               # reusable embeds
+│   │── bot.py                  # Startup & wiring
+│   │── discord_handlers.py     # Slash cmds, views, modals
+│   │── embeds.py               # Reusable embeds
 │   └── views.py                # Buttons/Selects
 │── domain/
 │   └── models.py               # Task, Project, enums
 │── infra/
-│   └── config.py               # project configuration
+│   └── config.py               # Project configuration
 │── persistence/
 │   │── base.py                 # Session, engine
 │   │── models.py               # SQLAlchemy ORM tables
 │   └── repositories.py         # Repo impls
 │── services/
-│   └── task_service.py         # use cases
+│   └── task_service.py         # Use cases
 │── README.md
-│── requirements.txt            # python environment requirements
+│── requirements.txt            # Python environment requirements
 │── .env
 └── .gitignore
 ```
@@ -53,14 +53,15 @@ pip install -r requirements.txt
 ```
 
 2. Environment variables
-   create a `.env` file
+
+    create a `.env` file
 
 ```env
 DISCORD_TOKEN=your-bot-token-here
 DATABASE_URL=postgresql+psycopg2://postgres:<ENCODED_PASSWORD>@aws-1-us-west-1.pooler.supabase.com:6543/postgres?sslmode=require
 ```
 
-3. Run
+1. Run
 
 ```bash
 python -m app.bot
@@ -68,7 +69,7 @@ python -m app.bot
 
 ## Database Noets:
 
-this project uses:
+This project uses:
 
 ```python
 Base.metadata.create_all(bind=engine)

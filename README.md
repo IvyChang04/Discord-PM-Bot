@@ -45,7 +45,7 @@ discord-pm-bot/
 1. Clone & install
 
 ```bash
-git clone https://github.com/yourname/discord-pm-bot.git
+git clone git@github.com:IvyChang04/Discord-PM-Bot.git
 cd discord-pm-bot
 python -m venv .venv
 source .venv/bin/activate
